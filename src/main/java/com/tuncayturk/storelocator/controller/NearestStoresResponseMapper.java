@@ -7,7 +7,6 @@ import com.tuncayturk.storelocator.model.GeoPoint;
 
 import java.util.List;
 
-/** Builds the {@code /nearest} response from a search origin and its results. */
 final class NearestStoresResponseMapper {
 
     private NearestStoresResponseMapper() {

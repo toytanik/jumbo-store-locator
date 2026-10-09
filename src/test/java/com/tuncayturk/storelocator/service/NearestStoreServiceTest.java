@@ -6,6 +6,8 @@ import com.tuncayturk.storelocator.dto.StoreResponse;
 import com.tuncayturk.storelocator.model.GeoPoint;
 import com.tuncayturk.storelocator.model.Store;
 import com.tuncayturk.storelocator.repository.StoreRepository;
+
+import java.util.Comparator;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
@@ -26,7 +28,7 @@ class NearestStoreServiceTest {
 
         assertThat(result).extracting(StoreResponse::id)
                 .containsExactly("utrecht", "houten", "bunnik", "zeist");
-        assertThat(result).isSortedAccordingTo((a, b) -> Double.compare(a.distanceKm(), b.distanceKm()));
+        assertThat(result).isSortedAccordingTo(Comparator.comparingDouble(StoreResponse::distanceKm));
     }
 
     @Test
