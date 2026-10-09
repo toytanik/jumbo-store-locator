@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: jumbo-store-locator
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+store-locator:
+  data-location: classpath:stores.json

@@ -1,0 +1,74 @@
+{
+  "stores": [
+    {
+      "uuid": "valid-1",
+      "addressName": "Jumbo Utrecht Centrum",
+      "city": "Utrecht",
+      "postalCode": "3511 AB",
+      "street": "Hoog Catharijne",
+      "street2": "12",
+      "latitude": "52.090700",
+      "longitude": "5.121400",
+      "locationType": "SupermarktPuP",
+      "collectionPoint": true,
+      "todayOpen": "08:00",
+      "todayClose": "20:00"
+    },
+    {
+      "uuid": "missing-collection-point",
+      "addressName": "Jumbo Zonder Afhaalpunt",
+      "city": "Amersfoort",
+      "postalCode": "3811 AA",
+      "street": "Langestraat",
+      "street2": "1",
+      "latitude": "52.156100",
+      "longitude": "5.387200",
+      "locationType": "Supermarkt",
+      "todayOpen": "08:00",
+      "todayClose": "20:00"
+    },
+    {
+      "uuid": "closed-today",
+      "addressName": "Jumbo Gesloten Filiaal",
+      "city": "Rotterdam",
+      "postalCode": "3011 AA",
+      "street": "Coolsingel",
+      "street2": "5",
+      "latitude": "51.924400",
+      "longitude": "4.477700",
+      "locationType": "PuP",
+      "collectionPoint": false,
+      "todayOpen": "Gesloten",
+      "todayClose": "Gesloten"
+    },
+    {
+      "uuid": "malformed-latitude",
+      "addressName": "Jumbo Kapot Filiaal",
+      "city": "Eindhoven",
+      "postalCode": "5611 AA",
+      "street": "Stratumseind",
+      "street2": "9",
+      "latitude": "not-a-number",
+      "longitude": "5.478300",
+      "locationType": "Supermarkt",
+      "collectionPoint": false,
+      "todayOpen": "08:00",
+      "todayClose": "20:00"
+    },
+    {
+      "uuid": "nan-latitude",
+      "addressName": "Jumbo NaN Filiaal",
+      "city": "Groningen",
+      "postalCode": "9711 AA",
+      "street": "Grote Markt",
+      "street2": "1",
+      "latitude": "NaN",
+      "longitude": "6.568200",
+      "locationType": "Supermarkt",
+      "collectionPoint": false,
+      "todayOpen": "08:00",
+      "todayClose": "20:00"
+    }
+  ],
+  "attributes": {}
+}
