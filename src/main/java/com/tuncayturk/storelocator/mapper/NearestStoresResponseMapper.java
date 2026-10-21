@@ -1,4 +1,4 @@
-package com.tuncayturk.storelocator.controller;
+package com.tuncayturk.storelocator.mapper;
 
 import com.tuncayturk.storelocator.dto.NearestStoresResponse;
 import com.tuncayturk.storelocator.dto.Origin;
@@ -7,12 +7,12 @@ import com.tuncayturk.storelocator.model.GeoPoint;
 
 import java.util.List;
 
-final class NearestStoresResponseMapper {
+public final class NearestStoresResponseMapper {
 
     private NearestStoresResponseMapper() {
     }
 
-    static NearestStoresResponse toResponse(GeoPoint origin, List<StoreResponse> stores) {
+    public static NearestStoresResponse toResponse(GeoPoint origin, List<StoreResponse> stores) {
         return new NearestStoresResponse(
                 new Origin(origin.latitude(), origin.longitude()),
                 stores

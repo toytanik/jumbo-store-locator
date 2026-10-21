@@ -2,6 +2,7 @@ package com.tuncayturk.storelocator.controller;
 
 import com.tuncayturk.storelocator.dto.NearestStoresResponse;
 import com.tuncayturk.storelocator.dto.StoreResponse;
+import com.tuncayturk.storelocator.mapper.NearestStoresResponseMapper;
 import com.tuncayturk.storelocator.model.GeoPoint;
 import com.tuncayturk.storelocator.service.NearestStoreService;
 import io.swagger.v3.oas.annotations.Operation;
