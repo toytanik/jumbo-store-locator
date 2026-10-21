@@ -17,5 +17,3 @@ springdoc:
 
 store-locator:
   data-location: classpath:stores.json
-server:
-  port: 0
